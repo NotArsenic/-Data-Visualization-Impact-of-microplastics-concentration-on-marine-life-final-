@@ -42,3 +42,5 @@ function updateContent(topic) {
   xhr.open("GET", htmlFile, true);
   xhr.send();
 }
+
+
