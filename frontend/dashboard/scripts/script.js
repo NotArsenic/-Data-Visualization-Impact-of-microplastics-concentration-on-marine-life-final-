@@ -31,8 +31,8 @@ function updateContent(topic) {
       htmlFile = "microplastics.html";
       break;
 
-    case "pollution":
-      htmlFile = "pollution.html";
+    case "biodiversity":
+      htmlFile = "biodiversity.html";
       break;
 
     default:
