@@ -6,12 +6,15 @@ function updateContent(topic) {
     if (xhr.readyState === XMLHttpRequest.DONE) {
       if (xhr.status === 200) {
         contentDiv.innerHTML = xhr.responseText;
-
         window.scrollTo(0, 0);
       } else {
         contentDiv.innerHTML = "Failed to load content";
       }
     }
+  };
+
+  xhr.onerror = function () {
+    contentDiv.innerHTML = "Error loading content";
   };
 
   var htmlFile;

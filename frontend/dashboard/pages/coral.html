@@ -1,2 +1,98 @@
-<h3>Coral Bleaching</h3>
+<link rel="stylesheet" href="../styles/coral.css" />
 
+<div id="coral-heading">
+  <h1>Coral Bleaching</h1>
+</div>
+
+<div id="treemap-heading">
+  <h3>Ocean Treemap</h3>
+</div>
+
+<div id="treemap-container">
+  <img
+    id="treemap-image"
+    src="../../plots/Coral_Bleaching/Atlantic_Treemap.png"
+    alt="Treemap"
+  />
+</div>
+
+<div>
+  <label for="ocean-select-treemap">Select Ocean for Treemap:</label>
+  <select id="ocean-select-treemap" onchange="changeOceanTreemap(this.value)">
+    <option value="atlantic">Atlantic Ocean</option>
+    <option value="pacific">Pacific Ocean</option>
+    <option value="indian">Indian Ocean</option>
+    <option value="red_sea">Red Sea</option>
+    <option value="arabian_gulf">Arabian Gulf</option>
+  </select>
+</div>
+
+<div id="turbidity-heading">
+  <h3>Turbidity Graph</h3>
+</div>
+
+<div id="turbidity-graph-container">
+  <img
+    id="turbidity-graph-image"
+    src="../../plots/Coral_Bleaching/Turbidity_Atlantic.png"
+    alt="Turbidity Graph"
+  />
+</div>
+
+<div>
+  <label for="ocean-select-turbidity">Select Ocean for Turbidity Graph:</label>
+  <select
+    id="ocean-select-turbidity"
+    onchange="changeOceanTurbidity(this.value)"
+  >
+    <option value="atlantic">Atlantic Ocean</option>
+    <option value="pacific">Pacific Ocean</option>
+    <option value="indian">Indian Ocean</option>
+    <option value="red_sea">Red Sea</option>
+    <option value="arabian_gulf">Arabian Gulf</option>
+  </select>
+</div>
+
+<div id="heat-graph-heading">
+  <h3>Heat Graph</h3>
+</div>
+
+<div id="heat-graph-container">
+  <img
+    id="heat-graph-image"
+    src="../../plots/Coral_Bleaching/Heat_Change_years.png"
+    alt="Heat Graph"
+  />
+</div>
+
+<div id="bleaching-graph-heading">
+  <h3>Bleaching Graph</h3>
+</div>
+
+<div id="bleaching-graph-container">
+  <img
+    id="bleaching-graph-image"
+    src="../../plots/Coral_Bleaching/Avg_Bleaching_Oceanwise.png"
+    alt="Bleaching Graph"
+  />
+</div>
+
+<div id="heatmap-heading">
+  <h3>Heatmap</h3>
+</div>
+
+<div id="map-container">
+  <iframe
+    id="map"
+    src="../../maps/coral_bleaching_map_with_popup_and_legend.html"
+    frameborder="0"
+  ></iframe>
+  <button class="btn btn-primary fullscreen-btn" onclick="openFullscreen()">
+    &#8597;
+  </button>
+</div>
+
+<div id="coral-report">
+  <h3>Coral Bleaching Report</h3>
+  <p>This section contains insights about global coral bleaching.</p>
+</div>
