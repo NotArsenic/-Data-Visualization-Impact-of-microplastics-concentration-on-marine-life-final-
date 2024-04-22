@@ -1,0 +1,13 @@
+pandas
+numpy
+matplotlib
+folium
+geopandas
+scipy.interpolate
+sklearn
+basemap
+seaborn
+dash
+plotly
+branca
+
